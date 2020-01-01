@@ -1,0 +1,33 @@
+<section>
+        <app-student (add)="addUser($event)"></app-student>
+</section>
+<div class="container">
+    <div class="row">
+        <h2>Master component</h2>
+        <table class="table table-border">
+            <tr>
+                <th>Sno</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Username</th>
+                <th>Number</th>
+                <th>Course</th>
+                <th>Action</th>
+            </tr>
+            <tr *ngFor="let s of result; let i = index">
+                <td>{{i+1}}</td>
+                <td>{{s.fname}}</td>
+                <td>{{s.lname}}</td>
+                <td>{{s.uname}}</td>
+                <td>{{s.mobile}}</td>
+                <td>{{s.gender}}</td>
+                <td>{{s.course}}</td>
+                <td>
+                  <button class="btn btn-primary" (click)="edit(s)">Edit</button>
+                  <button class="btn btn-danger ml-2" (click)="delete(s)">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <app-student [suraj]="neelu"></app-student>
+</div>

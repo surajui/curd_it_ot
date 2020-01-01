@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <table class="table table-straped">
+            <tr>
+                <th>Id</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Mobile</th>
+                <th>Gender</th>
+                <th>Course</th>
+                <!-- <th></th> -->
+            </tr>
+            <tr *ngFor="let s of result" (click)="onClick(s.id)">
+                <td>{{s.id}}</td>
+                <td>{{s.fname}}</td>
+                <td>{{s.lname}}</td>
+                <td>{{s.mobile}}</td>
+                <td>{{s.gender}}</td>
+                <td>{{s.course}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+{
+  "posts": [
+    {
+      "fname": "suraj",
+      "lname": "sable",
+      "uname": "suraj",
+      "mobile": "8790519812",
+      "gender": "male",
+      "course": "angular",
+      "id": 1
+    },
+    {
+      "fname": "murali",
+      "lname": "murali",
+      "uname": "murali",
+      "mobile": "012346+678",
+      "gender": "male",
+      "course": "angular",
+      "id": 3
+    },
+    {
+      "id": "4",
+      "fname": "ali",
+      "lname": "ali",
+      "uname": "ali",
+      "mobile": "8790519812",
+      "gender": "male",
+      "course": "angular"
+    },
+    {
+      "id": "6",
+      "fname": "neelima",
+      "lname": "gada",
+      "uname": "neelima",
+      "mobile": "0123456789",
+      "gender": "female",
+      "course": "angular"
+    },
+    {
+      "id": "cIv7TYi",
+      "fname": "asdf",
+      "lname": "sdaf",
+      "uname": "sadfas",
+      "mobile": "sadfa",
+      "gender": "male",
+      "course": "angular"
+    },
+    {
+      "id": "n8al9zl",
+      "fname": "fdg",
+      "lname": "dfg",
+      "uname": "fdg",
+      "mobile": "43546",
+      "gender": "male",
+      "course": "java"
+    }
+  ],
+  "comments": [],
+  "profile": [
+    {
+      "fname": "suraj",
+      "lname": "sable",
+      "uname": "suraj",
+      "mobile": "8790519812",
+      "gender": "male",
+      "course": "angular",
+      "id": 1
+    },
+    {
+      "fname": "murali",
+      "lname": "murali",
+      "uname": "murali",
+      "mobile": "012346+678",
+      "gender": "male",
+      "course": "angular",
+      "id": 2
+    },
+    {
+      "fname": "ali",
+      "lname": "ali",
+      "uname": "ali",
+      "mobile": "8790519812",
+      "gender": "male",
+      "course": "angular",
+      "id": 4
+    },
+    {
+      "fname": "neelima",
+      "lname": "gada",
+      "uname": "neelima",
+      "mobile": "0123456789",
+      "gender": "female",
+      "course": "angular",
+      "id": 5
+    },
+    {
+      "fname": "neelima",
+      "lname": "gada",
+      "uname": "neelima",
+      "mobile": "0123456789",
+      "gender": "female",
+      "course": "angular",
+      "id": 6
+    }
+  ]
+}

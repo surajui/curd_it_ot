@@ -1,0 +1,56 @@
+
+<div class="container">
+    <div class="row">
+        <h2>Student component</h2>
+        <div class="col-6">
+            <form [formGroup]="student">
+                <div class="form-group">
+                    <label>Firstname<span class="text-danger">*</span></label>
+                    <input type="text" formControlName="fname" class="form-control text-line">
+                    <div *ngIf="student.get('fname').invalid && student.get('fname').touched">
+                        <p style="color:red">Please enter name</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Lastname<span class="text-danger">*</span></label>
+                    <input type="text" formControlName="lname" class="form-control" [ngClass]="{'is-invalid':student.get('lname').invalid && student.get('lname').touched}">
+                    <p *ngIf="student.get('lname').invalid && student.get('lname').touched" class="invalid-feedback">Please enter Lastname</p>
+                </div>
+                <div class="form-group">
+                    <label>Username<span class="text-danger">*</span></label>
+                    <input type="text" formControlName="uname" class="form-control" [ngClass]="{'is-invalid':student.get('uname').invalid && student.get('uname').touched}">
+                    <p *ngIf="student.get('uname').invalid && student.get('uname').touched" class="invalid-feedback">Please enter Username</p>
+                </div>
+                <div class="form-group">
+                    <label>Mobile<span class="text-danger">*</span></label>
+                    <input type="text" formControlName="mobile" class="form-control" [ngClass]="{'is-invalid':student.get('mobile').invalid && student.get('mobile').touched}">
+                    <p *ngIf="student.get('mobile').invalid && student.get('mobile').touched" class="invalid-feedback">Please enter Username</p>
+                </div>
+                <div class="form-group">
+                        <label>Gender<span class="text-danger">*</span></label>
+                        <input type="radio" formControlName="gender" name="gender" value="male">Male
+                        <input type="radio" formControlName="gender" name="gender" value="female">Female
+                    </div>
+                <div class="form-group">
+                        <label>Cousres<span class="text-danger">*</span></label>
+                   <select class="form-control" formControlName="course">
+                       <option>--Select course--</option>
+                     <option>angular</option>
+                     <option>java</option>
+                     <option>c</option>
+                     <option>.net </option>
+                   </select>
+                </div>
+                <div class="form-group">
+                    <input type="button" class="btn btn-success" value="Submit" (click)="onSubmit()">
+                </div>
+                <div class="form-group">
+                        <input type="button" class="btn btn-success" value="Updata" (click)="update(student.value)">
+                    </div>
+            </form>
+        </div>
+    <div class="col-6">
+        {{suraj}}
+    </div>
+    </div>
+</div>
